@@ -3,4 +3,5 @@ Install pre-requisites for Docker, and install Docker EE for Server 2019. Suppor
 
 # Software versions in this script
 Docker Version: EE 18.09
+
 LCOW Version: v4.14.35-v0.3.9
