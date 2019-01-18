@@ -29,6 +29,7 @@ Install-Package Docker -ProviderName DockerMsftProvider -RequiredVersion 18.09 -
 Set-ItemProperty -Path HKLM:\system\CurrentControlSet\Services\Docker\ -Name ImagePath -Value """C:\Program Files\Docker\dockerd.exe"" --run-service --experimental"
 
 #Get latest Linux Kit LCOW
+#if SSL/TLS error: [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 Invoke-WebRequest -Uri "https://github.com/linuxkit/lcow/releases/download/v4.14.35-v0.3.9/release.zip" -OutFile "$env:TEMP\LCOWRelease.zip"
 
 #Extract LCOW to Program Files for Docker
